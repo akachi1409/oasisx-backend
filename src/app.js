@@ -25,9 +25,9 @@ app.use(cors()); // Enables CORS
 app.use(express.json());
 app.use(express.urlencoded());
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(BUILD_DIR, "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(BUILD_DIR, "index.html"));
+// });
 
 app.use('/', router);
 module.exports = app;
